@@ -1,0 +1,132 @@
+/* Styles généraux */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+#clicker {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#click-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.bouton:hover {
+    background-color: #d32f2f;
+}
+
+#info {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    
+}
+
+#batiments {
+    width: 200px;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+#batiments .batiment {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #ff7f0d;
+    color: #000;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#batiments .batiment:hover {
+    background-color: #ffac33;
+}
+
+#batiments .batiment .info {
+    display: none; /* Masquer les informations sur le bâtiment */
+}
+
+#batiments .batiment:hover .info {
+    display: block; /* Afficher les informations sur le bâtiment au survol */
+}
+
+#outils {
+    width: 200px;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.bouton-outil {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ff7f0d;
+    color: #000;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.bouton-outil:hover {
+    background-color: #ffac33;
+}
+
+#bouton {
+    position: relative;
+    height: 100vh; /* Assure que le conteneur occupe toute la hauteur de la fenêtre */
+}
+
+#clickButton {
+    position: absolute;
+    top: 50%; /* Déplace le bouton à 50% de la hauteur du conteneur */
+    left: 50%; /* Déplace le bouton à 50% de la largeur du conteneur */
+    transform: translate(-50%, -50%); /* Décale le bouton de moitié de sa propre largeur et hauteur vers le haut et la gauche */
+    display: flex;
+    text-transform: uppercase;
+    color: #eeeeee;
+    font-size: 20px;
+    background-color: #41c200;
+    padding: 50px 50px;
+    border-radius: 50px;
+}
+
+#clickButton:hover {
+    background-color: #d32f2f;
+}
+
+
+#wallet {
+    font-weight: bold;
+    color: #ffac33;
+}
+
+#cps {
+    font-weight: bold;
+    color: #ffac33;
+}
